@@ -8,7 +8,7 @@
   --ff-primary: 'Poppins', sans-serif;
 
   --fw-normal: 400;
-  --fw-semi: 600:
+  --fw-semi: 600;
   --fw-bold: 800;
 
   --fs-16: 1rem;
@@ -28,8 +28,27 @@
   --clr-shadow-500: hsla(324, 86%, 86%, 0.153);
   --clr-shadow-600: hsla(348, 60%, 55%, 0.082);
 
-  --clr-gradient: linear-gradient(90deg, hsl(276, 78%, 73%), hsl(339, 95%, 71%));
-
+  --clr-gradient: linear-gradient(
+    90deg,
+    hsl(276, 78%, 73%),
+    hsl(339, 95%, 71%)
+  );
 }
 
+/* CSS RESET */
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
