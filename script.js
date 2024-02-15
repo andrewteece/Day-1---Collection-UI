@@ -28,11 +28,11 @@ collections.forEach(collection => {
     })
 });
 
-// Remove checkmarks when it's clicked outside of the collection item 
+// Remove checkmarks when it's clicked outside of the collection item
 
 document.body.addEventListener('click', (e) => {
     if (!e.target.closest('.collection')) {
-        [...document.querySelectorAll('check')].forEach(check => check.remove());
+        [...document.querySelectorAll('.check')].forEach(check => check.remove());
         collections.forEach(c => {
             c.style.borderColor = "transparent"
         })
